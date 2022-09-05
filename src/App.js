@@ -1,11 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Users from './user/pages/Users';
+import NewPlace from './places/pages/NewPlace';
+import Error from './shared/pages/Error';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        PlaceKeep
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Users/>}/>
+        <Route path="/places/new" element={<NewPlace/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Routes>
+    </Router>
   );
 }
 
