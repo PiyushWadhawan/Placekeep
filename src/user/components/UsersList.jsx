@@ -1,7 +1,7 @@
 import React from 'react'
 import './UsersList.css';
 import UsersItem from './UsersItem';
-
+import Card from '../../shared/components/UIElements/Card';
 
 const UsersList = (props) => {
 
@@ -9,7 +9,9 @@ const UsersList = (props) => {
   {
     return (
       <div className="center">
-        <h2>No Users Found</h2>
+        <Card>
+          <h2>No Users Found</h2>
+        </Card>
       </div>
     )
   }
