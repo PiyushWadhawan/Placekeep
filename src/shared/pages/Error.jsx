@@ -3,8 +3,9 @@ import './Error.css'
 
 const Error = () => {
   return (
-      <img className='ErrorImage' src="https://i.pinimg.com/originals/90/fb/43/90fb4379e62ef4104a0bd58bae82fe35.gif" alt="404 Not Found" style={{backgroundColor: "black"}} />
-    
+    <div className='error-page'>
+      <img src="https://c.tenor.com/WroA6LhOTzQAAAAM/vector-moon.gif" alt="" />
+    </div>
   )
 }
 
